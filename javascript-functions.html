@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JavaScript Basic Learning </title>
+
+    <style>  
+      
+      body {
+          background-color: #fff;
+      }
+
+      .container {
+          max-width: 800px;
+          margin: 50px auto;
+          border: 2px solid #ddd;
+          padding: 30px;
+
+      }
+
+    </style>
+
+</head>
+
+<body>
+  
+    <div class="container">   
+        <h1> JavaScript Basic Learning </h1>
+    </div>
+ 
+    <script>
+
+     // console.log(myFunction());
+    /*  function myFunction() {
+       return 5 + 10;
+     }
+
+      function calculator(x,y,z) {
+       return x + y+ z;
+      }
+
+      let result = calculator(7, 11, 13);
+      console.log(result);
+      */
+
+      function calculator(x, y, z) {
+         let output;
+          if('sum' == z) {
+             output = x+y; // Local Scope
+          }
+
+          if('sub' == z) {
+             output = x-y; // Local Scope
+          }
+
+          if('mult' == z) {
+             output = x * y; // Local Scope
+          }
+
+          if('devide' == z) {
+             output = x / y; // Local Scope
+          }
+
+          return output;
+      }
+       
+     let sum = calculator(10, 20, 'sum');
+     let sub = calculator(130, 45, 'sub');
+     let multti = calculator(15, 6, 'mult');
+     let devided = calculator( 25, 5, 'devide');
+
+     console.log(sum);
+     console.log(sub);
+     console.log(multti);
+     console.log(devided);
+
+    </script>
+    
+</body>
+</html>
